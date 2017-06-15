@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>com.zaf</groupId>
+		<artifactId>spring_boot_study</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>netty_study</artifactId>
+	<packaging>jar</packaging>
+	<name>netty_study</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<netty-version>4.1.12.Final</netty-version>		
+	</properties>
+
+	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		
+		<!-- netty framework -->
+        <dependency>
+       	    <groupId>io.netty</groupId>
+       	    <artifactId>netty-codec-http</artifactId>
+       	    <version>${netty-version}</version>
+        </dependency>
+       
+        <dependency>
+       	    <groupId>io.netty</groupId>
+       	    <artifactId>netty-handler</artifactId>
+       	    <version>${netty-version}</version>
+        </dependency>
+
+	</dependencies>
+</project>
